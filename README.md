@@ -90,3 +90,4 @@ CQRSContainer.get<MySomethingClass>(MY_TYPES.MySomethingClass).sayHello()
 // output: hello romeo
 ```
 # Contributing
+updating...
