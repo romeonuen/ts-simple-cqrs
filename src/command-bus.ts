@@ -21,7 +21,6 @@ export class CommandBus<CommandBase extends ICommand = ICommand> extends Observa
   constructor() {
     super();
     this.useDefaultPublisher();
-    console.log('command bus created')
   }
 
   execute<T extends CommandBase, R = any>(command: T): Promise<R> {

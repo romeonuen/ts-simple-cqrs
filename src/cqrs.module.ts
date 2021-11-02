@@ -24,7 +24,6 @@ export class CQRSModule implements ICQRSModule {
     @inject(TYPES.EventBus) private readonly _eventBus: EventBus,
     @inject(TYPES.QueryBus) private readonly _queryBus: QueryBus
   ) {
-    console.log('cqrs module created')
   }
 
   explore(type: ServiceType): SimpleCQRSType {

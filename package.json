@@ -1,14 +1,11 @@
 {
   "name": "ts-simple-cqrs",
-  "version": "1.0.1",
+  "version": "1.0.10",
   "description": "* Custom Nest CQRS Module https://github.com/nestjs/cqrs for any javascript projects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
-    "prepare" : "npm run build",
-    "version" : "git add -A src",
-    "postversion" : "git push && git push --tags"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",

@@ -30,7 +30,6 @@ export class EventBus<EventBase extends IEvent = IEvent> extends ObservableBus<E
     this.subscriptions = [];
     this.getEventName = defaultGetEventName;
     this.useDefaultPublisher();
-    console.log('event bus created')
   }
   get publisher(): IEventPublisher<EventBase> {
     return this._publisher;
