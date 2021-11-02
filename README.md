@@ -47,7 +47,7 @@ commandBus.execute(new TestCommand('romeo')).then(val => console.log(val))
 // output: hello romeo
 ```
 ## Explain
-1. Everything is exactly the same as how Nest CQRS did except using `@injectable()` decorator for all handlers to register with Inversify container
+1. Everything is exactly the same as how Nest CQRS did except using `@injectable()` decorator for all handlers to register with Inversify container and how to init CQRS
 2. You can pass `commandBus, eventBus, queryBus` to anywhere to use.
 3. If you want to inject them to some other classes directly(like Nest), you have to follow the [InversifyJS](https://github.com/inversify/InversifyJS). Something like below:
 ```javascript
