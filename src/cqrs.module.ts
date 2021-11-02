@@ -14,7 +14,7 @@ export type ServiceType = Required<{
 }>
 
 export interface ICQRSModule {
-  explore(handler: ServiceType);
+  explore(handler: ServiceType): SimpleCQRSType;
 }
 
 @injectable()

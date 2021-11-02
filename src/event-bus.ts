@@ -61,7 +61,7 @@ export class EventBus<EventBase extends IEvent = IEvent> extends ObservableBus<E
     handlers.forEach((handler) => this.registerHandler(handler));
   }
 
-  protected registerHandler(handlerType) {
+  protected registerHandler(handlerType: EventHandlerType) {
     CQRSContainer.bind(handlerType).toSelf()
     const handler = CQRSContainer.get(handlerType) as IEventHandler
 

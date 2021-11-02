@@ -1,5 +1,5 @@
 /*
- * Nest CQRS Module custom for any typescript projects
+ * Nest CQRS Module
  * Copyright(c) 2017-... Kamil Mysliwiec
  * www.kamilmysliwiec.com
  * MIT Licensed

@@ -1,20 +1,38 @@
 {
   "name": "ts-simple-cqrs",
   "version": "1.0.0",
-  "description": "* Nest CQRS Module https://github.com/nestjs/cqrs custom for any javascript projects\r  * Copyright(c) 2017-... Kamil Mysliwiec\r  * www.kamilmysliwiec.com\r  * MIT Licensed\r  * Custom by Romeo Nguyen",
+  "description": "* Custom Nest CQRS Module https://github.com/nestjs/cqrs for any javascript projects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prepare" : "npm run build",
+    "version" : "git add -A src",
+    "postversion" : "git push && git push --tags"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/romeonuen/ts-simple-cqrs.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "cqrs",
+    "typescript"
+  ],
+  "author": "Romeo Nguyen",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/romeonuen/ts-simple-cqrs/issues"
   },
-  "homepage": "https://github.com/romeonuen/ts-simple-cqrs#readme"
+  "homepage": "https://github.com/romeonuen/ts-simple-cqrs#readme",
+  "devDependencies": {
+    "reflect-metadata": "^0.1.13",
+    "typescript": "4.4.3"
+  },
+  "dependencies": {
+    "inversify": "^5.1.1",
+    "rxjs": "^7.4.0"
+  },
+  "files": [
+    "lib/**/*"
+  ]
 }
