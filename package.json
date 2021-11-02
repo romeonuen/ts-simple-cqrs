@@ -1,0 +1,20 @@
+{
+  "name": "ts-simple-cqrs",
+  "version": "1.0.0",
+  "description": "* Nest CQRS Module https://github.com/nestjs/cqrs custom for any javascript projects\r  * Copyright(c) 2017-... Kamil Mysliwiec\r  * www.kamilmysliwiec.com\r  * MIT Licensed\r  * Custom by Romeo Nguyen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romeonuen/ts-simple-cqrs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/romeonuen/ts-simple-cqrs/issues"
+  },
+  "homepage": "https://github.com/romeonuen/ts-simple-cqrs#readme"
+}
