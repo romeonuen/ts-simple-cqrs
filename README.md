@@ -7,7 +7,7 @@ npm i --save ts-simple-cqrs
 ```
 # Usage
 ### Required knownledge
-Family with typescript decorator and [InversifyJS](https://github.com/inversify/InversifyJS)
+Family with CQRS, typescript decorator and [InversifyJS](https://github.com/inversify/InversifyJS)
 
 ```javascript
 // TestCommand.ts
@@ -49,7 +49,7 @@ commandBus.execute(new TestCommand('romeo')).then(val => console.log(val))
 ## Explain
 1. Everything is exactly the same as how Nest CQRS did except using `@injectable()` decorator for all handlers to register with Inversify container and how to init CQRS
 2. You can pass `commandBus, eventBus, queryBus` to anywhere to use.
-3. If you want to inject them to some other classes directly(like Nest), you have to follow the [InversifyJS](https://github.com/inversify/InversifyJS). Something like below:
+3. If you want to inject them to some other classes directly(same as Nest did), you have to follow the [InversifyJS](https://github.com/inversify/InversifyJS). Something like below:
 ```javascript
 import {SimpleCQRS} from "ts-simple-cqrs";
 import {TestCommandHandler} from "./TestCommandHander";
